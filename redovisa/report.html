@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="sv">
+<meta charset="utf-8">
+<title>Redovisningar | Kursen linux</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body>
+<header>
+    <h1 class="logo">Linux</h1>
+    <nav class="navbar">
+        <ul>
+            <li><a href="me.html">Om mig</a></li>
+            <li><a href="report.html">Redovisning</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+<article class="review">
+
+<h1 class="site-top-header">Min Redovisnings-sida</h1>
+
+<p>Av Emil Mattsson</p>
+<section>
+    <h2>Kmom01: Linux som server</h2>
+
+    <h4>Är du sedan tidigare bekant med Unix, Linux, Debian och/eller terminalen? </h4>
+    <p>Jag har i tidigare kurser arbetat med pakethanteraren Cygwin och installerat ett antal program där. Utöver detta har jag Debian Jessie på min bärbara dator och där har jag lekt runt; installerat, tagit bort filer och provat lite olika paket. Enklare saker har jag alltså gjort tidigare.</p>
+
+    <h4>Hur känns det med Unix-kommandon på terminalen, är det udda eller bekvämt? </h4>
+    <p>Det börjar kännas bekvämt då jag lekt med min Debian ända sedan program starten i höstas. Det är fortfarande mycket kvar att lära sig men det finns en manual och tutorial till Debian på deras hemsida som man kan gå igenom.</p>
+
+    <h4>Valde du att köra standard med VirtualBox och Debian eller hur gjorde du? </h4>
+    <p>Trots att jag har Debian på min bärbara dator så valde jag att starta upp en VirtualBox på min stationära Windows dator också. Mos gav oss under föreläsningen en checklista med saker en webbprogrammerare ska kunna inom Linux, där var Virtualbox med och därmed bestämde jag mig för att lära mig det redan nu. </p>
+
+    <h4>Var det något som krånglade eller tog extra mycket tid? </h4>
+    <p>Det var endast en sak som krånglade. Jag har inte lyckats göra så att jag kan kopiera ifrån min Host till min Guest. Efter att ha letat i forum så provade jag att installera ett paket med Guest program som finns med redan efter installationen av VirtualBox. Det hjälpte inte. Mitt mål blir att fråga en lärare hur man kan få det att fungera under kommande labbar.</p>
+
+    <h3>Reflektion</h3>
+
+    <h4>Erfarenheter och lärdomar</h4>
+    <p>Att lära sig att starta ett operativsystem igenom en Virtualbox kommer nog behövas i framtiden, det tillåter mig att testa min kod i en helt fräsch miljö och jag kan tänka mig att Travis gör någonting liknande i bakgrunden när man testar sin kod med hjälp av dem.
+    Den främsta lärdomen är hur man startar en Linux server. Det är någonting jag viljat lära mig länge och även om jag inte helt förstår alla koncept bakom (som får det hela att fungera) så ser jag fram emot att få lära mig mer om det i framtiden. Om inte grunderna tas i denna kurs så tas de troligen i Datakommunikation längre fram.</p>
+
+    <h4>Problem och lösningar</h4>
+    <p>Annat än problemet med kopieringen ifrån Host till Guest så var det ingenting större som dök upp. Allting fungerade felfritt och jag jobbade mig hinderslöst igenom övningarna.</p>
+
+    <h4>Resultat</h4>
+    <p>Resultatet blev en Linux server i Debian Jessie OS genom VirtualBox som Guest på min Windows dator. Denna server provade jag att logga in på ifrån min andra dator som också kör Debian och det fungerade (det är den jag tog skärmdump ifrån). </p>
+
+    <p>Kurslitteraturen var  bra eftersom man praktiskt fick öva in de olika terminalkommandona. Den förklarade även vad varje kommando gjorde på ett utförligt och lättläst sätt. Momentets upplägg var även det tillfredsställande och det var inga svårigheter att ta till sig kunskapen. Jag höll mig inom ramarna denna gång då detta fortfarande känns relativt nytt för mig och utsträckningarna får komma i framtida moment istället.</p>
+
+    <p class="site-top-header">Beröm till alla lärare, TA och kursansvariga!</p>
+</section>
+
+<h2>Kmom02: Apache Virtual Hosts</h2>
+
+<h4>Hur känns konceptet med Apache name-based Virtual Hosts? Känner du igen det sedan tidigare?</h4>
+<p>Tidigare har jag arbetat med XAMPP och därifrån känner jag igen Apache. Däremot har jag aldrig gått in på djupet: öppnat portar, ändrat host-filer, startat upp en server eller använt mig av namnbaserad igenkänning tidigare. Att gå in på djupet gav mig mer förståelse för vad som sker i bakgrunden, speciellt hur dbwebbs egna servrar fungerar och hur jag kan starta min egen på ett liknande sätt (även om denna endast var lokal).</p>
+
+<h4>Det blir allt fler kommandon i terminalen, hur känns det med terminalen och dess kommandon?</h4>
+<p>Jag börjar bli allt mer van vid terminalen och att skriva ”one-liners” med hjälp av argument, options samt wildcards. Att läsa man-dokumenten hjälper enormt men om de är långa så blir de svåra att leta i. Mos rekommenderade en hemsida där de är lättare att läsa.</p>
+
+<h4>Gick det bra med ssh-nycklar och rsync över ssh?
+Hur kändes det att jobba med tmux?</h4>
+<p>Jag skapade mina ssh nycklar med kommandot ssh-keygen och utan att skriva in lösenordet kunde jag enkelt lägga över filer ifrån min host till min guest med rsync. </p>
+
+<p>Tmux använde jag flitigt. Jag loggade in på servern i ett fönster och körde rsync i en annan, sedan bytte jag över till det första fönstret och körde ls kommandot, direkt såg jag förändringen, utan att behöva byta fönster i Windows. Då upptäckte jag även att original filen hette me.html och jag bytte dess namn till index.html. Slutligen editerade jag index samt redovisnings filen eftersom båda innehöll a element som fortfarande ville öpnna me.html.</p>
+
+<h3>Reflektion</h3>
+
+<h4>Erfarenheter och lärdomar</h4>
+<p>Nu börjar man lägga alla pusselbitar på rätt plats. Saker jag undrat över tidigare, som hur man startar upp en egen server likt dbwebb, har äntligen klarats upp. Det ända som saknas är att jag har min egen domän som jag kan lägga ut min server på (och lite säkerhetsgrejer som att användare inte ska komma åt mappar ovanför vhosts).</p>
+
+<p>En lärdom överlag är att Opera inte verkar komma åt vare sig XAMPP localhost eller någon lokal webbserver, oavsett om man ändrat rätt i hosts filen eller inte.</p>
+
+<p>Att förstå wildcards anser jag var det viktigaste jag lärt mig då jag enklare kan flytta, kopiera eller ta bort filer på ett snabbt, avancerat och specifikt sätt. Labben gav mig förståelse för deras styrka och hur de kan spara tid, speciellt i uppgifterna som bad en plocka ut filer med ett visst avslut och en viss sträng i namnet.</p>
+
+<h4>Problem och lösningar</h4>
+<p>Ett problem dök upp när jag skulle gå in på min hemsida ifrån en lokal webbläsare. Det fungerade inte trots att jag ändrat i hosts. Efter att ha läst forumtråden om detta insåg jag att det behöver vara min servers IP adress i nätverket och inte 127.0.0.1. (En notis om det i övningen kan hjälpa andra nybörjare.)</p>
+
+<h4>Resultat</h4>
+<p>Ett enklare sätt att arbeta med sin debian server samt andra kommandon samtidigt igenom tmux, inlärning av wildcards och grundkommandon samt lite kort om hur man kan flytta saker till och från en server. Snart kan jag skryta med att jag har LAMP (Linux, Apache, MySql, php/python) kunskaper. </p>
+
+<h2>Kmom03</h2>
+<h4>Är detta din första bekantskap med skriptprogrammering i Bash?</h4>
+<p>Jag har inte programmerat inom Bash förut, därför hamnade fokusen på kurslitteraturen. Till en början kändes det överväldigande, men efter läsning av man-filerna, google, återblickar till litteraturen och samtliga videor så började det släppa. Syntaxen till kommandon (kommando, option, argument) sitter nu i ryggmärgen tack vare labben.</p>
+
+<h4>Vilka möjligheter/utmaningar ser du med denna typen av skriptprogrammering?</h4>
+<p>En möjlighet jag ser är att automatisera mer av det jag gör. Till exempel började jag koda ett skript som startar upp min arbetsmiljö (atom, cygwin, dbwebb-kurser foldern) för kursen igenom windows cmd när jag klickar på en .sh fil. Jag har även planer på att göra så den kan uppdatera samtliga program. Det blir några färre knapptryck.</p>
+<p>Utmaningarna ligger i att hålla kunskapen om alla kommandon vid liv och att inte förstöra för sig själv igenom att skriva över filer. Att skapa en backup innan ändring är en vana jag nu övar in.</p>
+
+<h4>Var det något som var extra svårt eller utmanande i uppgifterna?</h4>
+<p>Det mest utmanande var att lära sig den nya syntaxen, den ser olika ut ibland. C-liknande uträkningar omsluts av (()) och variabler behöver ingen $. När en if-sats kallar en funktion så behövs inte ”[” samt ”]” utan dessa används endast när man utför kommandon.</p>
+<p>Det som tog tid var när jag utmanade mig att koda lösningen till primtalsuppgiften istället för att använda kommandon. Det blev 2 funktioner med while loopar och if-satser. En funktion kollade om det var ett primtal och den andra funktionen använde den förstnämnda för att avgöra om argumentet var delbart med primtalet. Lösningen och tester finns med i kursrepot.</p>
+
+<h4>Tittade du på videoserien? Vad tyckte du om den? </h4>
+<p>Kris Occhipintis videor som handlade om hur man använder cat, grep, wc, pipe, cut head och tail. var de bästa (de hade fler exempel). Grep är det största av nämnda kommandon och kommer ta längst tid att lära sig fullt ut, men de övningar som fanns i labben tillät mig att repetera det noggrant.</p>
+
+<h3>Reflektion</h3>
+
+<h4>Erfarenhet och lärdomar</h4>
+<p>Den främsta lärdomen är hur man använder sig av Pipe (”|”) för att skicka text output ifrån ett föregående kommando till inputen i ett nytt kommando. Det tillät lösningar på uppgifter med bara en rad kod i labben.  Dessa skulle jag även kunnat koppla ihop med en ”redirect” om målet hade varit att spara ned resultatet på fil.</p>
+<p>En viktig sak jag tar med mig ifrån artikeln om skript är hur man undviker att skriptet slutar fungera om en variabel är tom och man når en if-sats. Antingen initierar man alla variabler eller så kan man omsluta variabeln med kvoteringstecken i if-satsen: ”$variabel”. På så sätt kan if-satsen alltid jämföra med någonting utan att det blir fel.</p>
+
+<h4>Problem och lösningar</h4>
+<p>Min ovana i hur man kodar i Bash skapade buggar i slutuppgiften. Lösningen blev att plocka ut de enskilda funktionerna, testa dem tills de fungerade och sedan lägga in dem i huvudprogrammet.</p>
+<p>Att förstå ”Shift” var en utmaning. Jag försökte läsa man-filen men blev inget klokare på det. En googling gav en ungefärlig förståelse för kommandot och efter att ha provat mig fram med kommentarer som beskrev flödet kom uppenbarelsen. Argumenten flyttas åt vänster. Det vill säga det argument som var argument $2 blir argument $1 och så vidare.</p>
+
+<h4>Resultat</h4>
+<p>Ny kunskap och förståelse för Bash kommandon, hur man kan göra livet enklare för sig och några nya lärdomar. Jag är nöjd med momentet i sig och känner redan nu att jag börjar få bra kunskap i området.
+</p>
+
+<h2>Kmom04: Server med Node.js</h2>
+
+<h4>Är detta din första bekantskap med JavaScript på servern eller har du testat det tidigare?</h4>
+<p>Jag har inte arbetat med Javascript på servern tidigare. Däremot har jag en enstaka gång arbetat med en äldre version av Node.js. Det var på den tiden när de fortfarande hade sin egna shell. </p>
+
+<h4>Vad tänker du om ECMA6, dess nya funktioner och sättet att få tillgång till dem via babel-node?</h4>
+<p>ECMA6 funktioner har jag varit inne på tidigare när jag skapat mina egen high-order funktion. Att ha mer lättläslig kod är aldrig någonting jag är emot, men med det sagt verkar det lite konstigt att normen är funktionsdeklarationer med hjälp av en shorthand, istället för att skriva ”function” i den nya standarden. Den nya standarden som tilltalar mig mest är angående rest variabler. Om man till exempel vill skapa sin egen high-order funktion kan man nu använda sig av så kallad ”spread syntax” för att kasta in sina rest variabler i callable funktionen istället för att använda ”callable.apply(null, restparams)”. Spread syntaxen ser istället ut så här: myCallable(...restparams). Simplare och tydligare enligt mig.</p>
+
+<h4>Hur gick det att förstå koncepten kring klient och server?</h4>
+<p>Klienten har sitt program som vet vilken adress (ip + port) den behöver ta kontakt med och servern som finns tillgänglig på den adressen vet utifrån innehållet i klientens anrop vad som efterfrågas. Servern behöver inte ha kännedom om vart klienten finns så länge klienten vet var servern finns. </p>
+
+<h4>Är du bekant med begreppet funktionell programmering och har du några tankar kring det?</h4>
+<p>Funktionell programmering kräver enligt mig bättre matematik kunskaper än andra former av programmering, detta eftersom funktionell programmering grundar sig i komposition av matematiska funktioner istället för sekventiella instruktioner. Min första lösning på hur man tar fram ett primtal var sekventiell (denna återfinns i redovisningen Linux – Kmom03) och i labben för detta kursmoment använde jag mig av en funktionell lösning (matematik istället för sekvenser). Resultatet blev snabbare och mindre kod, men kanske mindre lättläslig för en oerfaren matematiker. För att vara mer exakt med vilket funktionellt primtals test jag använde så var det Fermat (ett tal är prim om: Math.pow(a, talet - 1) % talet === 1). Denna kan ge pseudoprim (eller som jag kallar det, falska primtal). Det allra första sker dock på tal 341, så för labbuppgifterna passade denna utmärkt. Jag kunde undvikit pesudoprimtal igenom att fortsätta söka igenom samtliga tal tills jag når 341, men det hade reducerat hastigheten på mitt program.</p>
+
+<p>High-order funktioner är jag (som påvisat i tidigare stycke) bekant med sedan innan och polymorfism har jag tillämpat i c++ vid ett flertal tillfällen. Båda dessa koncept är för mig matnyttiga. Rekursion har jag som mål att lära mig mer om.</p>
+
+<h3>Reflektion</h3>
+
+<h4>Erfarenheter och lösningar</h4>
+<p>Den viktigaste lärdomen för mig är hur man starar upp en egen node.js server och kommer åt den ifrån andra datorer inom nätverket. Samt hur curl kan hjälpa en att göra detta och hur man får fram utskriften av curl i terminalen.</p>
+
+<h4>Problem och lösningar</h4>
+<p>Ett problem hade jag på sista labb uppgiften. Jag fick svaret 75 istället för 70. Det verkade som att ”accumulatorn” ifrån start innehöll det första talet i arrayen (5, ett primtal) vilket ledde till att jag fick fel svar, då min tro var att ”currentValue” läggs till i ”accumulator” för varje instans, inte att den börjar med värdet av första talet i arrayen. Min lösning blev att helt enkelt skapa en funktion som skapar ett värde av 0 i början på arrayen. Accumulator får då detta värde och jag kringgår då problemet.</p>
+
+<h4>Resultat</h4>
+<p>Resultatet blev min egna nodejs server som fungerar som en restful api. Det vill säga en callback utförs samtidigt som andra kan anropa servern istället för att en sekvens tar upp hela programmets fokus.</p>
+
+<h2>Kmom05</h2>
+
+<p>Här skriver du redovisningstext för kursmoment 05.</p>
+
+<h2>Kmom06</h2>
+
+<p>Här skriver du redovisningstext för kursmoment 06.</p>
+
+<h2>Kmom10</h2>
+
+<p>Här skriver du redovisningstext för kursmoment 10.</p>
+
+</article>
+</main>
+
+<footer class="footer">
+    <p>&copy; Emil Mattsson</p>
+</footer>
+</body>
+</html>

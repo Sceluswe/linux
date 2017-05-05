@@ -1,0 +1,2 @@
+rsync -a redovisa/ scelus@192.168.1.13:vhosts/me.linux.se/htdocs
+lynx me.linux.se

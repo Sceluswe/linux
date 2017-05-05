@@ -1,0 +1,115 @@
+/*
+* My color sheme: Orange: #ff8b33 Blue: #3369ff
+*/
+
+html {
+    background-color: #D9D9D9;
+    font-family: Helvetica;
+    overflow-y: scroll;
+}
+body {
+    width: 720px;
+    height: 100%;
+    margin: 0 auto;
+}
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff8b33;
+}
+h2 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff8b33;
+}
+h3 {
+    margin-bottom: 20px;
+    border-bottom: 4px solid #ff8b33;
+}
+p {
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+img {
+    margin: 24px;
+}
+.left {
+    float: left;
+}
+.right {
+    float: right;
+}
+/*** --------------------------------
+* Header
+*/
+
+header {
+    height: 90px;
+    background-color: black;
+}
+.logo {
+    position: relative;
+    margin-top: 12px;
+    margin-bottom: 0;
+    padding-left: 24px;
+    border: transparent;
+    color: #ff8b33;
+    font-size: 4em;
+    float: left;
+}
+/*** --------------------------------
+* Navbar
+*/
+
+.navbar {
+    position: relative;
+    float: right;
+    margin-top: 32px;
+    padding-right: 24px;
+}
+.navbar li {
+    display: inline;
+}
+.navbar a {
+    padding: 12px;
+    border-bottom: 4px solid black;
+    color: #ff8f3f;
+    font-size: 1.25em;
+    text-decoration: none;
+}
+.navbar a:hover {
+    border-bottom: 4px solid #3369ff;
+}
+/*** --------------------------------
+* main content
+*/
+
+main {
+    background-color: #f6f6f6;
+    padding: 24px;
+    clear: both;
+}
+section,
+.site-top-header {
+    margin-bottom: 48px;
+}
+article.review h3 {
+    border-bottom: 4px solid #3369ff;
+    margin-left: 24px;
+}
+article.review h4,
+article.review p {
+    margin-left: 24px;
+}
+/*** --------------------------------
+* footer
+*/
+
+footer {
+    background-color: #f6f6f6;
+    padding: 12px;
+}
+.footer {
+    text-align: center;
+    margin-top: 24px;
+}

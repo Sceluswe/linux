@@ -1,0 +1,10 @@
+--- Log opened Sun Mar 29 18:35:21 2015
+--- Day changed Sat Jun 06 2015
+00:02 -!- Basic [~Adium@h83-209-77-186.dynamic.se.alltele.net] has quit []
+00:29 -!- zdevlin [53fa27f1@ircip2.mibbit.com] has quit [Quit: http://www.mibbit.com ajax IRC Client]
+06:06 -!- luz [~chatzilla@94.234.170.45] has joined #db-o-webb
+06:53 -!- Ankan [~ankan@c-31-208-35-60.cust.bredband2.com] has joined #db-o-webb
+07:32 -!- Basic [~Adium@h83-209-77-186.dynamic.se.alltele.net] has joined #db-o-webb
+09:14 -!- Basic [~Adium@h83-209-77-186.dynamic.se.alltele.net] has quit [Quit: Leaving.]
+09:47 -!- feeloor_ [~felix@c-83-233-58-114.cust.bredband2.com] has joined #db-o-webb
+09:49 -!- feeloor [~felix@c-83-233-58-114.cust.bredband2.com] has quit [Ping timeout: 240 seconds]
